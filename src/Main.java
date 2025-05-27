@@ -1,5 +1,4 @@
-import SortingService.BubbleSort;
-import SortingService.SelectionSort;
+import SortingService.*;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -14,6 +13,9 @@ public class Main {
         System.out.println("Select the following options to sort: " + Arrays.toString(arr));
         System.out.println("1. Bubble Sort");
         System.out.println("2. Selection Sort");
+        System.out.println("3. Insertion Sort");
+        System.out.println("4. Merge Sort");
+        System.out.println("5. Quick Sort");
         String s = br.readLine();
         int n = Integer.parseInt(s);
 
@@ -26,6 +28,21 @@ public class Main {
             case 2: {
                 SelectionSort ss = new SelectionSort();
                 System.out.println(Arrays.toString(ss.selectionSort(arr)));
+                break;
+            }
+            case 3: {
+                InsertionSort is = new InsertionSort();
+                System.out.println(Arrays.toString(is.insertionSort(arr)));
+                break;
+            }
+            case 4: {
+                MergeSort ms = new MergeSort();
+                System.out.println(Arrays.toString(ms.mergeSort(arr)));
+                break;
+            }
+            case 5: {
+                QuickSort qs = new QuickSort();
+                System.out.println(Arrays.toString(qs.quickSort(arr)));
                 break;
             }
             default: {
