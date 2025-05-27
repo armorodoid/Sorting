@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        int[] arr = new int[] {1, 9, 3, 8, 5, 2, 1, 7};
+        int[] arr = new int[] {1, 9, 3, 8, 5, 2, 1, 7, 6, 4};
         System.out.println("Select the following options to sort: " + Arrays.toString(arr));
         System.out.println("1. Bubble Sort");
         System.out.println("2. Selection Sort");
