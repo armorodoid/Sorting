@@ -36,13 +36,13 @@ public class Main {
                 break;
             }
             case 4: {
-                MergeSort ms = new MergeSort();
-                System.out.println(Arrays.toString(ms.mergeSort(arr)));
+                MergeSort ms = new MergeSort(arr);
+                System.out.println(Arrays.toString(ms.mergeSort()));
                 break;
             }
             case 5: {
-                QuickSort qs = new QuickSort();
-                System.out.println(Arrays.toString(qs.quickSort(arr)));
+                QuickSort qs = new QuickSort(arr);
+                System.out.println(Arrays.toString(qs.quickSort()));
                 break;
             }
             default: {

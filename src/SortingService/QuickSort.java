@@ -1,7 +1,12 @@
 package SortingService;
 
 public class QuickSort {
-    public int[] quickSort(int[] arr) {
+    private int[] arr;
+
+    public QuickSort(int[] arr) {
+        this.arr = arr;
+    }
+    public int[] quickSort() {
         return arr;
     }
 }

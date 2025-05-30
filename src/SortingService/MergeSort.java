@@ -1,7 +1,13 @@
 package SortingService;
 
 public class MergeSort {
-    public int[] mergeSort(int[] arr) {
+    private int[] arr;
+
+    public MergeSort(int[] arr) {
+        this.arr = arr;
+    }
+
+    public int[] mergeSort() {
         return arr;
     }
 }
